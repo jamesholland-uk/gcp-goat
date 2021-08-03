@@ -1,0 +1,42 @@
+tag_groups:
+  - name: ownership
+    tags:
+      - name: team
+        value:
+          default: engineering
+          matches:
+            - cloud-eng:
+                tags:
+                  git_modifiers:
+                    - jamesholland-uk
+                    - eurogig
+            - platform-eng:
+                tags:
+                  git_modifiers:
+                    - milkana
+                    - nofar
+                    - nimrodkor
+  - name: access
+    tags:
+      - name: level
+        value:
+          default: development
+          matches:
+            - production:
+                tags:
+                  git_org:
+                    - jamesholland-uk
+                    - eurogig
+            - operations:
+                tags:
+                  git_org:
+                    - milkana
+                    - nofar
+                    - nimrodkor  
+  - name: compliance
+    tags:
+      - name: pci-dss
+        value:
+          default: true                 
+          filters:
+            directory: /Users/sgiguere/code/bridgecrew/terragoat/terraform/azure
