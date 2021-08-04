@@ -24,6 +24,20 @@ resource google_bigquery_dataset "dataset" {
     special_group = "allAuthenticatedUsers"
     role          = "READER"
   }
+  labels = {
+    demo-owner           = "james"
+    git_commit           = "1b1dc85dfc698e131bbee6dc5f90c89e453e54e6"
+    git_file             = "big_data_tf"
+    git_last_modified_at = "2021-08-03-20-30-26"
+    git_last_modified_by = "jamoiholland"
+    git_modifiers        = "jamoiholland"
+    git_org              = "jamesholland-uk"
+    git_repo             = "gcp-goat"
+    level                = "production"
+    pci-dss              = "true"
+    team                 = "engineering"
+    yor_trace            = "d68648d7-b376-4cc4-97f1-fba1931d65d3"
+  }
 }
 
 resource google_sql_database_instance "master_instance2" {
