@@ -1,0 +1,120 @@
+{
+    "failed_checks": [
+        {
+            "file": "/big_data.tf",
+            "findings": [
+                {
+                    "resource": "google_sql_database_instance.master_instance",
+                    "check_ids": [
+                        "CKV_GCP_11",
+                        "CKV_GCP_14",
+                        "CKV_GCP_6"
+                    ]
+                },
+                {
+                    "resource": "google_bigquery_dataset.dataset",
+                    "check_ids": [
+                        "CKV_GCP_15"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/gcs.tf",
+            "findings": [
+                {
+                    "resource": "google_storage_bucket.terragoat_website",
+                    "check_ids": [
+                        "CKV_GCP_62"
+                    ]
+                },
+                {
+                    "resource": "google_storage_bucket_iam_binding.allow_public_read",
+                    "check_ids": [
+                        "CKV_GCP_28"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/gke.tf",
+            "findings": [
+                {
+                    "resource": "google_container_cluster.workload_cluster",
+                    "check_ids": [
+                        "CKV_GCP_1",
+                        "CKV_GCP_12",
+                        "CKV_GCP_13",
+                        "CKV_GCP_18",
+                        "CKV_GCP_19",
+                        "CKV_GCP_21",
+                        "CKV_GCP_23",
+                        "CKV_GCP_24",
+                        "CKV_GCP_25",
+                        "CKV_GCP_61",
+                        "CKV_GCP_64",
+                        "CKV_GCP_65",
+                        "CKV_GCP_66",
+                        "CKV_GCP_67",
+                        "CKV_GCP_69",
+                        "CKV_GCP_7",
+                        "CKV_GCP_70",
+                        "CKV_GCP_71",
+                        "CKV_GCP_8"
+                    ]
+                },
+                {
+                    "resource": "google_container_node_pool.custom_node_pool",
+                    "check_ids": [
+                        "CKV_GCP_10",
+                        "CKV_GCP_22",
+                        "CKV_GCP_68",
+                        "CKV_GCP_69",
+                        "CKV_GCP_9"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/instances.tf",
+            "findings": [
+                {
+                    "resource": "google_compute_instance.server",
+                    "check_ids": [
+                        "CKV_GCP_30",
+                        "CKV_GCP_32",
+                        "CKV_GCP_34",
+                        "CKV_GCP_35",
+                        "CKV_GCP_36",
+                        "CKV_GCP_38",
+                        "CKV_GCP_39"
+                    ]
+                },
+                {
+                    "resource": "google_compute_disk.unencrypted_disk",
+                    "check_ids": [
+                        "CKV_GCP_37"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/networks.tf",
+            "findings": [
+                {
+                    "resource": "google_compute_subnetwork.public-subnetwork",
+                    "check_ids": [
+                        "CKV_GCP_26"
+                    ]
+                },
+                {
+                    "resource": "google_compute_firewall.allow_all",
+                    "check_ids": [
+                        "CKV_GCP_2",
+                        "CKV_GCP_3"
+                    ]
+                }
+            ]
+        }
+    ]
+}
