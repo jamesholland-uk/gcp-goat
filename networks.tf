@@ -35,3 +35,4 @@ resource "google_compute_firewall" "allow_all2" {
     ports    = ["0-65535"]
   }
 }
+
