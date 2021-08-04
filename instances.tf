@@ -21,36 +21,12 @@ resource google_compute_instance "server" {
     enable-oslogin         = false
     serial-port-enable     = true
   }
-  labels = {
-    demo-owner           = "james"
-    git_commit           = "1b1dc85dfc698e131bbee6dc5f90c89e453e54e6"
-    git_file             = "instances_tf"
-    git_last_modified_at = "2021-08-03-20-30-26"
-    git_last_modified_by = "jamoiholland"
-    git_modifiers        = "jamoiholland"
-    git_org              = "jamesholland-uk"
-    git_repo             = "gcp-goat"
-    level                = "production"
-    pci-dss              = "true"
-    team                 = "engineering"
-    yor_trace            = "9d4c53c9-61b9-4da5-aa62-59cd0b39ed76"
-  }
 }
 
 resource google_compute_disk "unencrypted_disk" {
   name = "terragoat-${var.environment}-disk"
-  labels = {
-    demo-owner           = "james"
-    git_commit           = "1b1dc85dfc698e131bbee6dc5f90c89e453e54e6"
-    git_file             = "instances_tf"
-    git_last_modified_at = "2021-08-03-20-30-26"
-    git_last_modified_by = "jamoiholland"
-    git_modifiers        = "jamoiholland"
-    git_org              = "jamesholland-uk"
-    git_repo             = "gcp-goat"
-    level                = "production"
-    pci-dss              = "true"
-    team                 = "engineering"
-    yor_trace            = "8b1642ec-48ec-43b4-8873-39dfda90785a"
-  }
+}
+
+resource google_compute_disk "unencrypted_disk2" {
+  name = "terragoat-${var.environment}-disk2"
 }
