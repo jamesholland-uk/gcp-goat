@@ -3,4 +3,4 @@ repos:
     rev: 2.0.330
     hooks:
     -   id: checkov
-        args: ['']
+        args: ['--baseline .checkov.baseline']
