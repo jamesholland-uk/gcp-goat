@@ -25,3 +25,13 @@ resource "google_compute_firewall" "allow_all" {
     ports    = ["0-65535"]
   }
 }
+
+resource "google_compute_firewall" "allow_all2" {
+  name          = "terragoat-${var.environment}-firewall2"
+  network       = google_compute_network.vpc.id
+  source_ranges = ["0.0.0.0/0"]
+  allow {
+    protocol = "tcp"
+    ports    = ["0-65535"]
+  }
+}
