@@ -21,8 +21,22 @@ resource google_compute_instance "server" {
     enable-oslogin         = false
     serial-port-enable     = true
   }
+  labels = {
+    demo-owner = "james"
+    level      = "development"
+    pci-dss    = "true"
+    team       = "engineering"
+    yor_trace  = "91d2478d-1555-45d3-87e3-5c6455c82e0a"
+  }
 }
 
 resource google_compute_disk "unencrypted_disk" {
   name = "terragoat-${var.environment}-disk"
+  labels = {
+    demo-owner = "james"
+    level      = "development"
+    pci-dss    = "true"
+    team       = "engineering"
+    yor_trace  = "a62d0b1d-e3db-44a0-8394-3c48fb363697"
+  }
 }
