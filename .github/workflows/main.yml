@@ -47,4 +47,4 @@ jobs:
         uses: bridgecrewio/checkov-action@master
         with:
           framework: terraform
-          soft_fail: false
+          soft_fail: true
